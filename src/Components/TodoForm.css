@@ -1,0 +1,69 @@
+.todo-form {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 60px;
+}
+
+.todo-form-group {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 14px 18px;
+    border-radius: 9999px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1),
+                0 4px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    gap: 14px;
+}
+
+.todo-form-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+.todo-form-input {
+    flex: 1;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 1.15rem;
+    border: none;
+    background: #f8f9fa;
+    border-radius: 9999px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.todo-form-input:focus {
+    background: white;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.18);
+    transform: scale(1.02);
+}
+
+.todo-form-action {
+    height: 56px;
+    padding: 0 36px;
+    border-radius: 9999px !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.todo-form-action:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(25, 135, 84, 0.4);
+}
+
+.todo-form-action.btn-success {
+    background: linear-gradient(135deg, #198754, #20c997);
+    border: none;
+}
+
+.todo-form-action.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+    border: none;
+}

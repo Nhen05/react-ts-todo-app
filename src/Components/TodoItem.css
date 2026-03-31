@@ -1,0 +1,87 @@
+.todo-item {
+    list-style-type: none !important;
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    transition: background 0.25s ease;
+    padding: 0;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item:hover {
+    background: #f8f9fa;
+}
+
+/* Khi hoàn thành */
+.todo-item.completed {
+    opacity: 0.9;
+    background: #f8f9fa;
+}
+
+/* Phần nội dung chính */
+.todo-item-inner {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 16px;
+    min-height: 62px;
+}
+
+/* Text công việc */
+.todo-item-text {
+    flex: 1;
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: #212529;
+    line-height: 1.5;
+    cursor: pointer;
+    word-break: break-word;
+    padding: 4px 0;
+}
+
+.todo-item.completed .todo-item-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Phần nút hành động */
+.todo-item-action {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.todo-item-action button {
+    width: 101px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item-action button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.todo-item-action .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.todo-item-action .btn-primary {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Hiệu ứng khi đang edit */
+.todo-item.editing {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
